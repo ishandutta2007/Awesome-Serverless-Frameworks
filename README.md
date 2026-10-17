@@ -4,6 +4,15 @@
 
 # ⚡ Awesome Serverless Frameworks: The Definitive Guide to Modern FaaS, Edge Isolates & Infrastructure as Code
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Serverless-Frameworks/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Serverless-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Serverless-Frameworks?style=flat-square" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Serverless-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Serverless-Frameworks?style=flat-square" alt="GitHub forks"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
 > **The comprehensive, curated directory of Serverless Frameworks, Function-as-a-Service (FaaS) runtimes, Edge Isolates, and Infrastructure as Code (IaC) tooling across AWS, GCP, Azure, Cloudflare, and Kubernetes.**
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
