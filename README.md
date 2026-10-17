@@ -2,7 +2,7 @@
 
 # Awesome-Serverless-Frameworks
 
-# Top Serverless Frameworks Ecosystem
+## Top Serverless Frameworks Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Infrastructure as Code, Edge Deployment & Full-Stack Serverless DX*  
