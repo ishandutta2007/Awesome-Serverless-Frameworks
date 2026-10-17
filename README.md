@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Serverless Frameworks Banner" width="100%">
+</p>
+
 # Awesome Serverless Frameworks: The Definitive Guide to Modern FaaS, Edge Isolates & Infrastructure as Code
 
 > **The comprehensive, curated directory of Serverless Frameworks, Function-as-a-Service (FaaS) runtimes, Edge Isolates, and Infrastructure as Code (IaC) tooling across AWS, GCP, Azure, Cloudflare, and Kubernetes.**

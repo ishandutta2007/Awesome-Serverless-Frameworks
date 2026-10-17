@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="320">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="pulse-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <radialGradient id="glow-1" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-2" cx="80%" cy="70%" r="45%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <style>
+      .pulsing-node {
+        animation: pulse 4s ease-in-out infinite alternate;
+      }
+      .drifting-fast {
+        animation: drift 8s ease-in-out infinite alternate;
+      }
+      .drifting-slow {
+        animation: driftSlow 12s ease-in-out infinite alternate;
+      }
+      .dash-flow {
+        stroke-dasharray: 8 12;
+        animation: dash 20s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 6 10;
+        animation: dashRev 15s linear infinite;
+      }
+      .shimmer-bar {
+        animation: shimmer 6s ease-in-out infinite alternate;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.3; }
+        50% { transform: scale(1.15); opacity: 0.6; }
+        100% { transform: scale(1); opacity: 0.3; }
+      }
+      @keyframes drift {
+        0% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-12px) translateX(8px); }
+        100% { transform: translateY(6px) translateX(-6px); }
+      }
+      @keyframes driftSlow {
+        0% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(14px) translateX(-10px); }
+        100% { transform: translateY(-8px) translateX(12px); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -400; }
+      }
+      @keyframes dashRev {
+        to { stroke-dashoffset: 400; }
+      }
+      @keyframes shimmer {
+        0% { opacity: 0.5; filter: drop-shadow(0 0 4px #38bdf8); }
+        50% { opacity: 0.9; filter: drop-shadow(0 0 12px #ec4899); }
+        100% { opacity: 0.5; filter: drop-shadow(0 0 4px #818cf8); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+
+  <!-- Radial Glow Orbs -->
+  <circle cx="200" cy="80" r="220" fill="url(#glow-1)"/>
+  <circle cx="1020" cy="240" r="240" fill="url(#glow-2)"/>
+
+  <!-- Background Subtle Grid Pattern -->
+  <g stroke="#334155" stroke-opacity="0.15" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="200" y1="0" x2="200" y2="320"/>
+    <line x1="400" y1="0" x2="400" y2="320"/>
+    <line x1="600" y1="0" x2="600" y2="320"/>
+    <line x1="800" y1="0" x2="800" y2="320"/>
+    <line x1="1000" y1="0" x2="1000" y2="320"/>
+  </g>
+
+  <!-- Dynamic Animated Circuit/Flow Lines (Background) -->
+  <g fill="none" opacity="0.45">
+    <path class="dash-flow" d="M -50 90 Q 250 140, 500 70 T 950 110 T 1250 80" stroke="#38bdf8" stroke-width="2"/>
+    <path class="dash-flow-rev" d="M -50 250 Q 280 200, 600 270 T 1000 220 T 1250 260" stroke="#818cf8" stroke-width="2"/>
+    <path class="dash-flow" d="M 100 -20 Q 350 180, 700 130 T 1150 340" stroke="#ec4899" stroke-width="1.5" stroke-opacity="0.4"/>
+  </g>
+
+  <!-- Subtle Dynamic Background Floating Elements (low opacity, non-intrusive) -->
+  <g class="drifting-fast" opacity="0.35">
+    <!-- Serverless Node 1 -->
+    <circle cx="120" cy="180" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <path d="M 112 180 L 122 168 L 120 178 L 128 178 L 118 192 L 120 182 Z" fill="#38bdf8"/>
+    <!-- Edge Node 2 -->
+    <rect x="1040" y="70" width="85" height="34" rx="17" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="1082" y="92" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ Edge</text>
+  </g>
+
+  <g class="drifting-slow" opacity="0.35">
+    <!-- FaaS Badge Pill -->
+    <rect x="80" y="50" width="80" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="120" y="70" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">λ FaaS</text>
+    <!-- IaC Pill -->
+    <rect x="1050" y="220" width="80" height="30" rx="15" fill="#1e293b" stroke="#ec4899" stroke-width="1.2"/>
+    <text x="1090" y="240" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">🛠️ IaC</text>
+  </g>
+
+  <!-- Pulsing Connection Points -->
+  <g class="pulsing-node">
+    <circle cx="280" cy="100" r="6" fill="#38bdf8"/>
+    <circle cx="920" cy="130" r="6" fill="#ec4899"/>
+    <circle cx="600" cy="50" r="5" fill="#818cf8"/>
+  </g>
+
+  <!-- FOREGROUND CONTENT: High z-index, 100% crisp, fully readable -->
+  <g id="foreground" filter="url(#card-shadow)">
+    <!-- Top Decorative Category Tag -->
+    <rect x="475" y="32" width="250" height="28" rx="14" fill="#1e293b" stroke="url(#accent-grad)" stroke-width="1.5"/>
+    <text x="600" y="51" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.5" text-anchor="middle">
+      ⚡ THE MODERN SERVERLESS STACK
+    </text>
+
+    <!-- Main Title with Gradient and High Contrast Glow -->
+    <text x="600" y="125" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="46" font-weight="900" letter-spacing="-0.5" fill="#ffffff">
+      Awesome Serverless Frameworks
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="170" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#cbd5e1" letter-spacing="0.2">
+      Curated Directory of Top SaaS Platforms, Open-Source Runtimes, FaaS &amp; Infrastructure as Code
+    </text>
+
+    <!-- Interactive Pill Badges (Foreground) -->
+    <g transform="translate(230, 206)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="160" height="36" rx="18" fill="#111827" stroke="#38bdf8" stroke-width="1.5"/>
+        <text x="80" y="23" fill="#e0f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle">🚀 Multi-Cloud</text>
+      </g>
+
+      <!-- Pill 2 -->
+      <g transform="translate(185, 0)">
+        <rect width="170" height="36" rx="18" fill="#111827" stroke="#818cf8" stroke-width="1.5"/>
+        <text x="85" y="23" fill="#e0e7ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle">⚡ Edge Isolates</text>
+      </g>
+
+      <!-- Pill 3 -->
+      <g transform="translate(380, 0)">
+        <rect width="175" height="36" rx="18" fill="#111827" stroke="#ec4899" stroke-width="1.5"/>
+        <text x="87.5" y="23" fill="#fce7f3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle">🛠️ IaC Automation</text>
+      </g>
+
+      <!-- Pill 4 -->
+      <g transform="translate(580, 0)">
+        <rect width="160" height="36" rx="18" fill="#111827" stroke="#10b981" stroke-width="1.5"/>
+        <text x="80" y="23" fill="#d1fae5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" text-anchor="middle">🌐 100% Serverless</text>
+      </g>
+    </g>
+
+    <!-- Glowing Bottom Horizon Line -->
+    <rect class="shimmer-bar" x="200" y="278" width="800" height="2" rx="1" fill="url(#accent-grad)"/>
+  </g>
+</svg>
