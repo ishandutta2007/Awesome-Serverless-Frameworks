@@ -1,20 +1,21 @@
-# Awesome-Serverless-Frameworks
+# Awesome Serverless Frameworks: The Definitive Guide to Modern FaaS, Edge Isolates & Infrastructure as Code
 
-# Awesome-Serverless-Frameworks
+> **The comprehensive, curated directory of Serverless Frameworks, Function-as-a-Service (FaaS) runtimes, Edge Isolates, and Infrastructure as Code (IaC) tooling across AWS, GCP, Azure, Cloudflare, and Kubernetes.**
 
-## Top Serverless Frameworks Ecosystem
+**Curated List of SaaS Platforms & Open-Source GitHub Projects**  
+*Focused on Developer Experience (DX), Live Lambda Development, Scale-to-Zero, Edge Runtimes & Multi-Cloud Deployment*  
+**Last updated: 2026**
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Infrastructure as Code, Edge Deployment & Full-Stack Serverless DX*  
-**Last updated: March 2026**
+This repository provides an authoritative, community-driven catalog of the most impactful **SaaS platforms** and **open-source developer frameworks** powering the **Serverless Computing Ecosystem**. Whether building event-driven microservices on AWS Lambda, deploying low-latency edge functions on Cloudflare Workers or Vercel, orchestrating Kubernetes-native serverless containers with Knative and OpenFaaS, or managing declarative multi-cloud cloud infrastructure with Terraform, AWS CDK, and Pulumi — this guide equips platform engineers, DevOps leads, and full-stack developers with everything needed to evaluate, deploy, and scale serverless architectures without vendor lock-in.
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Serverless Frameworks**. These tools help developers define, deploy, and manage serverless applications — abstracting away infrastructure details while providing local development, CI/CD integration, and multi-cloud or edge deployment capabilities.
+### 🔍 Key Technology Focus Areas
+- **Function as a Service (FaaS) & Compute Runtimes**: Event-driven execution engines with sub-second scaling and true pay-per-invocation pricing.
+- **Edge Isolates & CDN Compute**: Ultra-lightweight V8 isolates delivering 0–10ms cold starts and global edge execution (Cloudflare Workers, Vercel Fluid Compute, Fastly Compute).
+- **Full-Stack Developer Frameworks**: Modern tooling featuring Live Lambda hot-reloads, local cloud emulation, and end-to-end type safety (SST, Serverless Framework, AWS SAM).
+- **Cloud-Native & Kubernetes Serverless**: Scale-to-zero container platforms for on-premise and private cloud workloads (Knative, OpenFaaS, Fission, Dapr).
+- **Programmatic Infrastructure as Code (IaC)**: Code-first abstractions transforming general-purpose code into reproducible cloud architectures (AWS CDK, Pulumi, Terraform).
 
-**Examples** include AWS SAM, Serverless Framework, SST, Vercel, Netlify, AWS CDK, Cloudflare Workers, Pulumi, Terraform, and Firebase (the category leaders).
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, multi-cloud IaC, and transparent deployment pipelines — ideal for developers prioritizing portability, avoiding vendor lock-in, and building serverless applications that can run anywhere.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+Contributions are warmly welcomed! Please read our [contribution guidelines](#how-to-contribute) to submit new frameworks, tools, or updates.
 
 ## Table of Contents
 - [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
