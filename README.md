@@ -37,6 +37,7 @@ Contributions are warmly welcomed! Please read our [contribution guidelines](#-h
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚠️ Disclaimer & Architecture Trade-offs](#️-disclaimer--architecture-trade-offs)
 - [Star History](#star-history)
+- [💖 Support & Community](#-support--community)
 
 ## 📊 Sector Overview & Market Dynamics
 
@@ -127,6 +128,22 @@ The global serverless computing market is estimated at **$18.5 Billion in 2026**
 
 ##  Star History
 [![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Serverless-Frameworks&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Serverless-Frameworks&type=date&legend=top-left)
+
+## 💖 Support & Community
+
+Thank you for exploring and utilizing the **Awesome Serverless Frameworks** curated list! Maintaining an accurate, battle-tested ecosystem guide with transparent pricing breakdowns and active open-source tracking requires continuous research and dedication.
+
+If you find this repository helpful for your projects, team architectures, or evaluations, here are several ways you can support:
+- ⭐ **Star this repository** on GitHub to help boost discoverability for fellow developers.
+- 🍴 **Fork and contribute** new tools, benchmarks, or documentation improvements via Pull Requests.
+- 📢 **Share this list** with your engineering team, cloud architects, or social communities.
+- ☕ **Buy me a coffee & sponsor ongoing work**: You can directly sponsor future updates via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor%20on%20GitHub-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor on GitHub" />
+  </a>
+</p>
 
 ---
 
