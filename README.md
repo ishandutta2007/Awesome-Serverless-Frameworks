@@ -2,7 +2,7 @@
   <img src="assets/banner.svg" alt="Awesome Serverless Frameworks Banner" width="100%">
 </p>
 
-# Awesome Serverless Frameworks: The Definitive Guide to Modern FaaS, Edge Isolates & Infrastructure as Code
+# ⚡ Awesome Serverless Frameworks: The Definitive Guide to Modern FaaS, Edge Isolates & Infrastructure as Code
 
 > **The comprehensive, curated directory of Serverless Frameworks, Function-as-a-Service (FaaS) runtimes, Edge Isolates, and Infrastructure as Code (IaC) tooling across AWS, GCP, Azure, Cloudflare, and Kubernetes.**
 
@@ -13,28 +13,28 @@
 This repository provides an authoritative, community-driven catalog of the most impactful **SaaS platforms** and **open-source developer frameworks** powering the **Serverless Computing Ecosystem**. Whether building event-driven microservices on AWS Lambda, deploying low-latency edge functions on Cloudflare Workers or Vercel, orchestrating Kubernetes-native serverless containers with Knative and OpenFaaS, or managing declarative multi-cloud cloud infrastructure with Terraform, AWS CDK, and Pulumi — this guide equips platform engineers, DevOps leads, and full-stack developers with everything needed to evaluate, deploy, and scale serverless architectures without vendor lock-in.
 
 ### 🔍 Key Technology Focus Areas
-- **Function as a Service (FaaS) & Compute Runtimes**: Event-driven execution engines with sub-second scaling and true pay-per-invocation pricing.
-- **Edge Isolates & CDN Compute**: Ultra-lightweight V8 isolates delivering 0–10ms cold starts and global edge execution (Cloudflare Workers, Vercel Fluid Compute, Fastly Compute).
-- **Full-Stack Developer Frameworks**: Modern tooling featuring Live Lambda hot-reloads, local cloud emulation, and end-to-end type safety (SST, Serverless Framework, AWS SAM).
-- **Cloud-Native & Kubernetes Serverless**: Scale-to-zero container platforms for on-premise and private cloud workloads (Knative, OpenFaaS, Fission, Dapr).
-- **Programmatic Infrastructure as Code (IaC)**: Code-first abstractions transforming general-purpose code into reproducible cloud architectures (AWS CDK, Pulumi, Terraform).
+- ⚡ **Function as a Service (FaaS) & Compute Runtimes**: Event-driven execution engines with sub-second scaling and true pay-per-invocation pricing.
+- 🌐 **Edge Isolates & CDN Compute**: Ultra-lightweight V8 isolates delivering 0–10ms cold starts and global edge execution (Cloudflare Workers, Vercel Fluid Compute, Fastly Compute).
+- 🛠️ **Full-Stack Developer Frameworks**: Modern tooling featuring Live Lambda hot-reloads, local cloud emulation, and end-to-end type safety (SST, Serverless Framework, AWS SAM).
+- ☸️ **Cloud-Native & Kubernetes Serverless**: Scale-to-zero container platforms for on-premise and private cloud workloads (Knative, OpenFaaS, Fission, Dapr).
+- 🏗️ **Programmatic Infrastructure as Code (IaC)**: Code-first abstractions transforming general-purpose code into reproducible cloud architectures (AWS CDK, Pulumi, Terraform).
 
-Contributions are warmly welcomed! Please read our [contribution guidelines](#how-to-contribute) to submit new frameworks, tools, or updates.
+Contributions are warmly welcomed! Please read our [contribution guidelines](#-how-to-contribute) to submit new frameworks, tools, or updates.
 
-## Table of Contents
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [🐙 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer & Architecture Trade-offs](#️-disclaimer--architecture-trade-offs)
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global serverless computing market is estimated at **$18.5 Billion in 2026** and projected to surpass **$48.2 Billion by 2030**, expanding at a compound annual growth rate (**CAGR of ~22.8%**). The sector exhibits **moderate fragmentation with dual-tier concentration**: core compute infrastructure remains a **concentrated oligopoly** led by cloud hyperscalers (AWS Lambda, Google Cloud Functions, Azure Functions), while the full-stack developer experience (DX), edge compute runtimes, and local deployment frameworks are **moderately fragmented and highly competitive**, driven by agile platforms (Vercel, Cloudflare, Netlify, Supabase) competing for developer mindshare and sub-second isolate performance.
 
-## SaaS/Hosted Platforms
+## 🏢 SaaS & Hosted Platforms
 
-| Platform | Company / Parent | Company Valuation / Revenue | Description & Focus | Starting Paid Pricing | Free Forever / Trial Tier Limits |
+| 🌐 Platform | 🏛️ Company / Parent | 💰 Company Valuation / Revenue | 📝 Description & Focus | 🏷️ Starting Paid Pricing | 🎁 Free Forever / Trial Tier Limits |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **[Firebase](https://firebase.google.com/)** | Google (Alphabet Inc.) | **~$2.1 Trillion Market Cap** (Google Cloud: ~$43.3B FY2025 rev) | Google's serverless BaaS & FaaS platform with Cloud Functions, Firestore real-time DB, and Authentication. | **$0/month base on Blaze Plan** (Pay-as-you-go: $0.40/million function invocations, $0.0000025/GB-second compute, $0.15/GB outbound network). | **Spark Plan (Free forever)**: 125,000 function invocations/mo, 40,000 GB-seconds/mo, 40,000 CPU-seconds/mo, 10 GB hosting transfer/mo, 1 GB Firestore storage. |
 | **[AWS Amplify](https://aws.amazon.com/amplify/)** | Amazon.com, Inc. / AWS | **~$2.0 Trillion Market Cap** (AWS: ~$107.6B FY2025 rev) | Full-stack AWS-native serverless platform providing opinionated backend provisioning, auth, APIs, and hosting. | **Pay-as-you-go**: $0.01 per build minute, $0.15/GB hosting bandwidth served, $0.023/GB data storage, Lambda backend at $0.20/million requests. | **AWS Free Tier (12 months free)**: 1,000 build minutes/mo, 15 GB/mo bandwidth, 5 GB storage; **Perpetual Free**: 1M AWS Lambda requests/mo, 3.2M seconds compute/mo. |
@@ -97,22 +97,25 @@ The global serverless computing market is estimated at **$18.5 Billion in 2026**
 - **[Self-Hosted Serverless](https://github.com/mstgnz/self-hosted-serverless)** [![GitHub stars](https://img.shields.io/github/stars/mstgnz/self-hosted-serverless?style=social&color=white)](https://github.com/mstgnz/self-hosted-serverless/stargazers)  
   **Lightweight, self-hostable serverless framework built with Go and WebAssembly.** Operates on standalone VPS or bare-metal servers without requiring heavy Kubernetes clusters. Features WebAssembly (Wasm) runtime for executing multi-language user functions, dual HTTP and gRPC communication protocols, SQLite/PostgreSQL/Redis storage adapters, and integrated real-time cold-start latency metrics. **Best for indie hackers and lean teams wanting zero vendor lock-in and minimal operational overhead**.
 
-## How to Contribute
+## 🤝 How to Contribute
 
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
+1. 🍴 **Fork the repo** to your GitHub account.
+2. ✏️ **Add or edit entries** in `README.md` (follow existing format).
+3. 📋 **Include required details**: name, official link, 1–2 sentence description, and whether it's SaaS or open-source.
+4. 🚀 **Submit a Pull Request (PR)** with a short explanation.
 
-Star the repo if you find it useful!
+⭐ **Star the repo** if you find it useful!
 
-## Disclaimer
+## ⚠️ Disclaimer & Architecture Trade-offs
 
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Serverless frameworks differ significantly in cloud support, deployment speed, and lock-in risk. **SST offers the best developer experience on AWS** with Live Lambda Development and 5-15 second code deploys. **Serverless Framework v4 changed licensing** for organizations over $2M revenue — pin your version. **Netlify's compute rate doubled in April 2026** — function-heavy apps may cost more there than on Vercel. **Cloudflare Workers offer the fastest cold starts (10-50ms) and lowest edge latency** but are coupled to Cloudflare's environment. **Vercel's Hobby tier is non-commercial only** — commercial apps require Pro. **The biggest lock-in is the runtime, not the framework** — Lambda code uses AWS SDK calls and event source formats regardless of deployment tool.
-- Self-hosted open-source solutions require proper Kubernetes infrastructure, container runtime configuration, and monitoring for cold-start latency.
+- 💡 This is a **community-curated** list — not exhaustive and not an endorsement.
+- ⚡ **Developer Experience vs. Portability**: **SST offers the best developer experience on AWS** with Live Lambda Development and 5-15 second code deploys. **Serverless Framework v4 changed licensing** for organizations over $2M revenue — pin your version.
+- 💸 **Cost Scaling Realities**: **Netlify's compute rate doubled in April 2026** — function-heavy apps may cost more there than on Vercel. **Vercel's Hobby tier is non-commercial only** — commercial apps require Pro.
+- 🚀 **Cold Starts & Edge Latencies**: **Cloudflare Workers offer the fastest cold starts (10-50ms) and lowest edge latency** but are coupled to Cloudflare's environment.
+- 🔒 **The Real Lock-in**: **The biggest lock-in is the runtime, not the framework** — Lambda code uses AWS SDK calls and event source formats regardless of deployment tool.
+- ☸️ **Self-Hosted Kubernetes Complexity**: Self-hosted open-source solutions require proper Kubernetes infrastructure, container runtime configuration, and monitoring for cold-start latency.
 
 ---
 
-**Made for developers, platform engineers, and teams building serverless applications across cloud and edge environments.**  
-Let's make serverless deployment more open, portable, and developer-friendly.
+**Made with 💖 for developers, platform engineers, and teams building serverless applications across cloud and edge environments.**  
+*Let's make serverless deployment more open, portable, and developer-friendly.*
