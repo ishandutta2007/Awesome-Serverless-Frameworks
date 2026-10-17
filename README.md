@@ -36,6 +36,7 @@ Contributions are warmly welcomed! Please read our [contribution guidelines](#-h
 - [🐙 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚠️ Disclaimer & Architecture Trade-offs](#️-disclaimer--architecture-trade-offs)
+- [Star History](#star-history)
 
 ## 📊 Sector Overview & Market Dynamics
 
@@ -123,6 +124,9 @@ The global serverless computing market is estimated at **$18.5 Billion in 2026**
 - 🚀 **Cold Starts & Edge Latencies**: **Cloudflare Workers offer the fastest cold starts (10-50ms) and lowest edge latency** but are coupled to Cloudflare's environment.
 - 🔒 **The Real Lock-in**: **The biggest lock-in is the runtime, not the framework** — Lambda code uses AWS SDK calls and event source formats regardless of deployment tool.
 - ☸️ **Self-Hosted Kubernetes Complexity**: Self-hosted open-source solutions require proper Kubernetes infrastructure, container runtime configuration, and monitoring for cold-start latency.
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Serverless-Frameworks&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Serverless-Frameworks&type=date&legend=top-left)
 
 ---
 
