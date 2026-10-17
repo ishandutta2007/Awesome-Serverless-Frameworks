@@ -24,17 +24,15 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[Vercel](https://vercel.com/)**  
-  **The framework-native platform for Next.js and frontend applications.** Fluid Compute pricing bills based on **Active CPU time** — paused during I/O waits — plus provisioned memory and invocations. **Hobby tier (non-commercial)**: 4 hours Active CPU, 360 GB-hrs memory, 1M invocations included. **Pro at $20/seat** with on-demand usage. Regional Active CPU rates vary from **$0.128/hr (Portland/Cleveland) to $0.221/hr (São Paulo)**. Fluid Compute's concurrency model serves multiple requests per warm instance, improving cost efficiency for bursty traffic. **Best for Next.js-first teams** and streaming workloads requiring longer request windows.
-
-- **[Netlify](https://www.netlify.com/)**  
-  **Credit-based platform with unlimited team members on Pro.** **Pro at $20/month** for 3,000 credits, scaling to 20,000 credits, with rollover on higher tiers. Functions billed in **GB-Hour units** — 10 credits per GB-Hour. **Default 1 GB memory**, up to 4 GB on Pro/Enterprise. **Compute rate doubled in April 2026** — function-heavy apps may now cost more on Netlify than Vercel. **Standard Functions: 60s limit; modern streaming: 10s; Background Functions: 15 minutes**. **Best for collaboration-heavy teams** valuing unlimited members and free deploy previews.
-
-- **[Firebase](https://firebase.google.com/)**  
-  **Google's serverless platform** with Cloud Functions for Firebase (Node.js), Firestore, Authentication, and Hosting. **Best for mobile and web apps** tightly coupled with Firebase's BaaS offerings.
-
-- **[AWS Amplify](https://aws.amazon.com/amplify/)**  
-  Full-stack serverless platform for frontend and mobile apps with AWS backend provisioning, CI/CD, and hosting. **Best for frontend teams wanting AWS backend without deep AWS expertise**.
+| Platform | Description & Focus | Starting Paid Pricing | Free Forever / Trial Tier Limits |
+| :--- | :--- | :--- | :--- |
+| **[Vercel](https://vercel.com/)** | Framework-native edge & frontend platform for Next.js and full-stack web applications with Fluid Compute. | **$20/month per seat** (Pro plan) + compute at $0.128–$0.221 per Active CPU-hour, $0.15/GB fast data transfer. | **Hobby Plan (Free forever)**: 100 GB bandwidth/mo, 1M edge middleware/serverless invocations/mo, 4 hours Active CPU time/mo, 360 GB-hours function execution. |
+| **[Netlify](https://www.netlify.com/)** | Composable web & serverless platform featuring deploy previews, background functions, and Edge Functions. | **$20/user/month** (Pro plan, billed $19/mo annually) with 3,000 credits included; additional credit packs at $10 per 500 credits. | **Starter Plan (Free forever)**: 100 GB bandwidth/mo, 300 build minutes/mo, 125,000 serverless function requests/mo, 100 function run-hours/mo. |
+| **[Firebase](https://firebase.google.com/)** | Google's serverless BaaS & FaaS platform with Cloud Functions, Firestore real-time DB, and Authentication. | **$0/month base on Blaze Plan** (Pay-as-you-go: $0.40/million function invocations, $0.0000025/GB-second compute, $0.15/GB outbound network). | **Spark Plan (Free forever)**: 125,000 function invocations/mo, 40,000 GB-seconds/mo, 40,000 CPU-seconds/mo, 10 GB hosting transfer/mo, 1 GB Firestore storage. |
+| **[AWS Amplify](https://aws.amazon.com/amplify/)** | Full-stack AWS-native serverless platform providing opinionated backend provisioning, auth, APIs, and hosting. | **Pay-as-you-go**: $0.01 per build minute, $0.15/GB hosting bandwidth served, $0.023/GB data storage, Lambda backend at $0.20/million requests. | **AWS Free Tier (12 months free)**: 1,000 build minutes/mo, 15 GB/mo bandwidth, 5 GB storage; **Perpetual Free**: 1M AWS Lambda requests/mo, 3.2M seconds compute/mo. |
+| **[Cloudflare Workers](https://workers.cloudflare.com/)** | Ultra-fast V8 isolate edge serverless platform with zero cold starts, KV store, and Durable Objects. | **$5/month** (Workers Paid) including 10M requests/mo + $0.30/million additional requests, $0.50/million CPU-seconds. | **Free Forever Plan**: 100,000 requests/day (~3M requests/mo), 10ms CPU execution time per invocation, up to 100 worker scripts. |
+| **[Supabase](https://supabase.com/)** | Open-source Firebase alternative featuring serverless Deno Edge Functions, Postgres database, and auth. | **$25/month per project** (Pro plan with $10 compute credits included) + $0.000002 per invocation over quota. | **Free Forever Plan**: 500,000 Edge Function invocations/mo, 500 MB Postgres database, 1 GB file storage, 2 GB egress bandwidth. |
+| **[Render](https://render.com/)** | Unified zero-devops cloud for hosting serverless functions, background workers, web services, and databases. | **$7/month** (Starter compute tier) + $0.10/GB bandwidth over quota; background cron jobs and serverless tasks. | **Free Tier Plan**: 750 free web service instance hours/mo (spins down after 15 min inactivity), 100 GB/mo bandwidth, 500 build minutes/mo. |
 
 ## Open-Source GitHub Projects
 
