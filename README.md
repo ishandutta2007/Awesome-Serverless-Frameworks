@@ -17,10 +17,15 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
+
+## Sector Overview & Market Dynamics
+
+The global serverless computing market is estimated at **$18.5 Billion in 2026** and projected to surpass **$48.2 Billion by 2030**, expanding at a compound annual growth rate (**CAGR of ~22.8%**). The sector exhibits **moderate fragmentation with dual-tier concentration**: core compute infrastructure remains a **concentrated oligopoly** led by cloud hyperscalers (AWS Lambda, Google Cloud Functions, Azure Functions), while the full-stack developer experience (DX), edge compute runtimes, and local deployment frameworks are **moderately fragmented and highly competitive**, driven by agile platforms (Vercel, Cloudflare, Netlify, Supabase) competing for developer mindshare and sub-second isolate performance.
 
 ## SaaS/Hosted Platforms
 
